@@ -1,0 +1,11 @@
+import math                                          #Aqui importa as funções matemáticas de math
+i = 0                                                #Aqui declara i como 0
+v = []                                               #Aqui cria o vetor v
+while i < 10:                                        #Aqui cria um loop por meio do while, e ele para até o i chegar em 9 (menor que 10)
+    if i%2 == 0:                                     #Aqui checa se é par, e caso seja cria um novo elemento no vetor com a fórmula para elementos em posições pares
+        v.insert(i, 3**i + 7 * math.factorial(i))
+    else:                                            #Caso não seja par, insere novo elemento com a fórmula pare elementos em posições ímpares
+        v.insert(i, 2**i + 4 * math.log(i))
+    i = i + 1                                        #Após inserir, o i aumenta 1 número, para ir para o próximo elemento
+print("A posição do maior elemento do vetor é " + str(v.index(max(v))) + " e a média dos valores do vetor é " + str(round(sum(v)/len(v),2)))
+#Aqui imprime o que se pede, achando primeiro a posição do maior elemento, e em seguida arrendondando a média de todos os elementos (que é a soma de todos pela quantidade total de elementos)
