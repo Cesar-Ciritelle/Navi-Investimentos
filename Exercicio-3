@@ -1,0 +1,11 @@
+notas = {
+        str(input("Insira o nome do aluno 1")): float(input("Insira a nota do Aluno 1")),
+        str(input("Insira o nome do aluno 2")): float(input("Insira a nota do Aluno 2")),
+        str(input("Insira o nome do aluno 3")): float(input("Insira a nota do Aluno 3")),
+        str(input("Insira o nome do aluno 4")): float(input("Insira a nota do Aluno 4")),
+        str(input("Insira o nome do aluno 5")): float(input("Insira a nota do Aluno 5"))
+}
+   #Aqui ele cria um dicionário, sendo a chave o nome do aluno e o valor a nota desse aluno.
+
+print("O aluno com maior nota foi o " + str(max(notas, key=notas.get)) + " e sua nota foi " + str(float(notas[max(notas, key=notas.get)])))
+ #Aqui ele printa o que se pede, o nome e a respectiva nota do aluno com a nota mais alta dentre todos.
