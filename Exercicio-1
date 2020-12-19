@@ -1,0 +1,10 @@
+i = 1                                               #Aqui declara a variável que irá de 1 a 5 milhões
+contagem = 0                                        #Aqui declara a variável que contará os números que satisfarão as condições.
+while i <= 5000000:                                 #Aqui cria um loop que se encerarrá quando i ultrapassar os 5 milhões 
+    if i%2 == 0 and i%37 == 0 and i%49 == 0:        #Aqui checa se é par e se satisfaz as 2 outras condições)
+        contagem = contagem + 1                     #caso seja, a contagem aumenta
+        
+    i = i + 1                                       #Aqui aumenta 1 para ir para o próximo
+
+print("O número total de números pares entre 1 e 5 milhões que são divisíveis por 37 e 49 simultaneamente é " + str(contagem) )
+#Aqui ele mostra o que foi pedido, que nada mais é do que a contagem de números que satisfizeram as condições
